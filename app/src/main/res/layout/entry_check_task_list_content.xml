@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/product_name"
+            style="@style/Weight1_Content"
+            android:layout_margin="@dimen/text_margin_micro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/batch_id"
+            android:paddingLeft="@dimen/text_margin_micro"
+            android:layout_below="@id/product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/entry_date"
+            android:layout_margin="@dimen/text_margin_micro"
+            android:layout_below="@id/batch_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_margin="@dimen/text_margin_micro"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/object_name_value"
+            android:layout_marginBottom="@dimen/normal_margin"
+            android:layout_below="@id/entry_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

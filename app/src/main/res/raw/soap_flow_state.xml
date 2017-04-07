@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Body>
+    <SetFlowState xmlns="http://railway.gtwise.com">
+        <sOrgId>$sOrgId</sOrgId>
+        <sTaskId>$sTaskId</sTaskId>
+        <sSQL>$sSQL</sSQL>
+        <nType>$nType</nType>
+        <sProjectName>$sProjectName</sProjectName>
+        <sObjectId>$sObjectId</sObjectId>
+        <sStrength>$sStrength</sStrength>
+        <sOrderDate>$sOrderDate</sOrderDate>
+        <sOrderPerson>$sOrderPerson</sOrderPerson>
+        <sPosition>$sPosition</sPosition>
+        <sStation>$sStation</sStation>
+        <sAuthInfo>$sAuthInfo</sAuthInfo>
+        <sSessionKey>$sSessionKey</sSessionKey>
+    </SetFlowState>
+</soap:Body>
+</soap:Envelope>

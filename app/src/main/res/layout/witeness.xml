@@ -1,0 +1,187 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/witeness_detail"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/witeness_sample_image"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:background="@drawable/camera" />
+
+            <LinearLayout
+                android:id="@+id/witeness_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/text_margin_micro"
+                    android:orientation="horizontal">
+                    <!--项目种类 点击下拉 可以选择不同的项目-->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/text_margin_micro"
+                        android:text="试验项目"
+                        android:layout_gravity="center_vertical"/>
+                    <Spinner
+                        android:id="@+id/test_items"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        />
+
+                    <!--<TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/text_margin_micro"
+                        android:text="机构编号" />-->
+
+                    <!-- <EditText
+                         android:id="@+id/org_id"
+                         android:layout_width="0dp"
+                         android:textSize="@dimen/text_size_middle"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="2"
+                         android:focusable="false"
+                         android:imeActionId="@+id/login"
+                         android:imeOptions="actionUnspecified"
+                         android:singleLine="true" />-->
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginBottom="@dimen/text_margin_micro"
+                     android:orientation="horizontal">
+
+                     <TextView
+                         android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="wrap_content"
+                         android:layout_marginRight="@dimen/text_margin_micro"
+
+                         android:text="机构名称" />
+
+                     <EditText
+                         android:id="@+id/org_name"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:textSize="@dimen/text_size_middle"
+                         android:layout_weight="2"
+                         android:focusable="false"
+                         android:imeActionId="@+id/login"
+                         android:imeOptions="actionUnspecified"
+                         />
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginBottom="@dimen/text_margin_micro"
+                     android:orientation="horizontal">
+
+                     <TextView
+                         android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="wrap_content"
+                         android:layout_marginRight="@dimen/text_margin_micro"
+                         android:text="试验材料" />
+
+                     <EditText
+                         android:id="@+id/object_name"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="2"
+                         android:textSize="@dimen/text_size_middle"
+                         android:focusable="false"
+                         android:imeActionId="@+id/login"
+                         android:imeOptions="actionUnspecified" />
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginBottom="@dimen/text_margin_micro"
+                     android:orientation="horizontal">
+
+                     <TextView
+                         android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="wrap_content"
+                         android:layout_marginRight="@dimen/text_margin_micro"
+                         android:text="地理位置" />
+
+                     <EditText
+                         android:id="@+id/position"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="2"
+                         android:focusable="false"
+                         android:textSize="@dimen/text_size_middle"
+                         android:imeActionId="@+id/login"
+                         android:imeOptions="actionUnspecified"
+                         android:text="" />
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginBottom="@dimen/small_margin"
+                     android:orientation="horizontal">
+
+                     <TextView
+                         android:id="@+id/label_comment"
+                         android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="wrap_content"
+                         android:layout_marginRight="@dimen/text_margin_micro"
+                         android:text="见证意见" />
+
+                    <!-- <android.support.design.widget.TextInputLayout
+                         android:layout_width="0dp"
+                         android:layout_weight="2"
+                         android:layout_height="match_parent">-->
+
+                        <EditText
+                            android:id="@+id/edit_comment"
+                            android:textSize="@dimen/text_size_middle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:imeOptions="actionUnspecified"
+                            android:layout_weight="2"
+                            android:singleLine="true" />
+
+                   <!-- </android.support.design.widget.TextInputLayout>-->
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <WebView
+            android:id="@+id/witeness_map"
+            android:layout_margin="@dimen/text_margin_micro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></WebView>
+    </LinearLayout>
+</RelativeLayout>
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+<server_address>59.46.51.219:28080</server_address>
+<!--  <server_address>192.168.0.188:9094</server_address>-->
+<video_ip>192.168.8.200</video_ip>
+<test_server>
+    <host>192.168.0.7</host>
+    <port>7766</port>
+</test_server>
+    <witness_content>0</witness_content>
+    <test_content>2</test_content>
+</config>

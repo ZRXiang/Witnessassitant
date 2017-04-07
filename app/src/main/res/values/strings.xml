@@ -1,0 +1,130 @@
+<resources>
+
+    <string name="app_name">见证助手 v1.0.0.16(试用版)</string>
+    <string name="action_qr_scan">扫描枪</string>
+    <string name="ok_button">确定</string>
+
+    <!--登录-->
+    <string name="label_user_id">员工工号</string>
+    <string name="label_username">员工姓名</string>
+    <string name="label_passwd">员工口令</string>
+    <string name="button_login">登录</string>
+    <string name="button_setting">设置</string>
+    <string name="button_register">注册</string>
+
+    <!--登录验证-->
+    <string name="error_incorrect_password">密码不正确</string>
+    <string name="error_field_required">不能为空</string>
+    <string name="is_exit_task">任务单号已存在</string>
+
+    <!-- 设置-->
+    <string name="server_address">服务器地址</string>
+    <string name="video_address">录像机地址</string>
+    <string name="video_user">摄像头账号</string>
+    <string name="video_password">摄像头密码</string>
+    <string name="test_server_address">试验机地址</string>
+    <string name="test_port">试验机端口</string>
+    <string name="tran_safe">安全传输</string>
+    <string name="detail_log">详细日志</string>
+    <string name="sql_server">SQL Server 数据库</string>
+    <string name="machine_code">机器码</string>
+    <string name="authorization_code">授权码</string>
+    <string name="save_button">保存</string>
+    <!--注册申请-->
+    <string name="edit_orgnization_code">机构编码</string>
+    <string name="eidt_email">常用邮箱</string>
+    <string name="edit_telephont">联系电话</string>
+    <string name="action_register_apply">注册申请</string>
+    <string name="title_activity_main">MainActivity</string>
+    <!--注册-->
+    <string name="apply_email">申请邮箱</string>
+    <string name="orgnization">所在单位</string>
+    <string name="serial_number">序列号</string>
+    <string name="register_code">注册码</string>
+    <string name="button_register_search">注册查询</string>
+
+    <!--主界面选项卡-->
+    <string name="sample_guild">取样指南</string>
+    <string name="sample_witness_button">取样见证</string>
+    <string name="test_witness_button">试验见证</string>
+    <string name="sample_product_witness_button">试件制作</string>
+    <string name="sample_split_model_button">试块拆模</string>
+    <string name="in_room_button">入库</string>
+    <string name="out_room_button">出库</string>
+    <string name="entry_check_button">进场验收</string>
+    <string name="video">试验录像</string>
+    <string name="problem_base">问题库</string>
+
+    <!--取样界面-->
+    <!-- 任务下载 结果上传界面-->
+    <!--现场见证-->
+    <!--见证详情-->
+    <!--<string name="label_sample_id">取样编号</string>
+    <string name="label_sample_person">取样人</string>
+    <string name="label_sample_id">取样日期</string>
+    <string name="label_sample_id">代表数量</string>
+    <string name="label_sample_id">试验项目</string>
+    <string name="label_sample_id">样品数量</string>
+    <string name="label_sample_id">委托单位负责人</string>
+    <string name="label_sample_id">取样见证人</string>
+    <string name="label_sample_id">试样描述</string>
+    <string name="label_sample_id">委托单位电话</string>
+    <string name="label_sample_id">取样见证人电话</string>
+    <string name="label_sample_id">委托单位</string>
+    <string name="label_sample_id">产品批号</string>
+    <string name="label_sample_id"></string>
+    <string name="label_sample_id">取样编号</string>
+    <string name="label_sample_id">取样编号</string>
+    <string name="label_sample_id">取样编号</string>
+    <string name="label_sample_id">取样编号</string>-->
+    <!--试件生产见证-->
+    <string name="org_id">机构编号</string>
+    <string name="notice_id">通知单号</string>
+    <string name="sample_id">试件编号</string>
+    <string name="strength">强度</string>
+    <string name="pos">施工部件</string>
+    <string name="time">龄期</string>
+    <string name="use">输入用途</string>
+    <string name="curing_way">养护方式</string>
+    <string name="position">位置</string>
+    <!--进场验收-->
+    <string name="object_name">对应试验</string>
+    <string name="product_name">产品名称</string>
+    <string name="factory">生产厂家</string>
+    <string name="batch_id">批量号</string>
+    <string name="output_date">出厂日期</string>
+    <string name="quantity">材料数量</string>
+    <string name="sample_spec">规格型号</string>
+    <string name="sample_size">规格尺寸</string>
+    <string name="entry_date">进场日期</string>
+    <string name="check_person">验收人</string>
+    <string name="comment">验收意见</string>
+    <string name="uploaded">已上传</string>
+    <string name="witness">是否见证</string>
+
+    <!--现场检测-->
+    <string name="measure_point_add">添加</string>
+    <string name="measure_point_finish">完成</string>
+    <string name="file_start">开始传输</string>
+    <string name="message_set">通讯设置</string>
+    <string name="point_item_finish">完成</string>
+    <string name="title_paired_devices">蓝牙设备</string>
+    <string name="title_other_devices">新设备</string>
+    <string name="none_paired">没有已匹配的设备</string>
+
+    <!--拌合站-->
+    <string name="add_task">新建任务</string>
+
+    <!--视频监控-->
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+
+    <!-- Example settings for Data & Sync -->
+
+    <!-- Example settings for Notifications -->
+
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

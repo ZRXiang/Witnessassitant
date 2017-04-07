@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/normal_margin"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/witeness_item_form"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/object_name"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/text_margin_small"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/sample_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin_small"
+            android:layout_toRightOf="@id/object_name" />
+
+        <TextView
+            android:id="@+id/batch_num"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/text_margin_small"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/object_name"/>
+        <TextView
+            android:id="@+id/history_witness_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/batch_num"
+            android:layout_marginLeft="@dimen/text_margin_small"
+            android:layout_marginRight="@dimen/text_margin_small"
+            android:layout_marginBottom="@dimen/text_margin_small"
+            android:layout_alignTop="@+id/batch_num" />
+
+        <TextView
+            android:text="@string/uploaded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>

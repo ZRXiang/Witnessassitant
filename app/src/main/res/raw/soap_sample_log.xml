@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <SampleLog xmlns="http://railway.gtwise.com">
+            <org_id>$org_id</org_id>
+            <sample_id>$sample_id</sample_id>
+            <person_name>$person_name</person_name>
+            <position>$position</position>
+            <operation>$operation</operation>
+            <sAuthInfo>$sAuthInfo</sAuthInfo>
+            <sSessionKey>$sSessionKey</sSessionKey>
+        </SampleLog>
+    </soap:Body>
+</soap:Envelope>

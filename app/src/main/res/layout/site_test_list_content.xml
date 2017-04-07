@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/normal_margin"
+    android:layout_marginRight="@dimen/normal_margin"
+    android:layout_marginTop="5dp"
+    android:divider="@drawable/line"
+    android:orientation="horizontal"
+    android:showDividers="end">
+
+        <LinearLayout
+            android:id="@+id/site_test_item_form"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/test_name"
+                style="@style/Weight2_Content"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin_micro" />
+            <TextView
+                android:id="@+id/orderId"
+                style="@style/Weight2_Content"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin_micro" />
+
+            <TextView
+                android:id="@+id/test_date"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/test_name"
+                android:layout_margin="@dimen/text_margin_micro" />
+
+        </LinearLayout>
+
+
+            <Button
+                android:id="@+id/button_test_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="强制上传"
+                android:layout_gravity="center_vertical"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_marginRight="@dimen/normal_margin"
+                android:textSize="@dimen/text_size_small" />
+            <Button
+                android:id="@+id/button_site_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_small" />
+
+
+
+</LinearLayout>

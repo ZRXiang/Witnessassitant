@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="com.example.phobes.witenessassitant.fragment.SampleGuildListFragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    tools:context=".fragment.TestObjectListFragment"
+    android:orientation="horizontal"
+    >
+    <com.cjj.MaterialRefreshLayout
+        android:id="@+id/category_mrl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        app:overlay="false"
+        app:progress_colors="@array/material_colors"
+        app:progress_show_circle_backgroud="false"
+        app:wave_height_type="higher"
+        app:wave_show="false">
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/witeness_apply_item_list"
+        app:layoutManager="LinearLayoutManager"
+        tools:listitem="@layout/witeness_apply_item_list_content"
+        >
+        
+    </android.support.v7.widget.RecyclerView>
+    </com.cjj.MaterialRefreshLayout>
+</LinearLayout>

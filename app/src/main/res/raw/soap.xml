@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<soap:Body>
+    <SQLDBEx xmlns="http://railway.gtwise.com">
+        <sSQL>$Sql</sSQL>
+        <sAuthInfo>$authInfo</sAuthInfo>
+        <sSessionKey>$sessionKey</sSessionKey>
+    </SQLDBEx>
+</soap:Body>
+</soap:Envelope>
+

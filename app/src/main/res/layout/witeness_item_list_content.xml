@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="2dp"
+    android:divider="@drawable/line"
+    android:orientation="vertical"
+    android:showDividers="end">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:id="@+id/history_witness_item_form"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/object_name"
+                style="@style/Weight1_Content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin_small" />
+
+            <TextView
+                android:id="@+id/sample_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/object_name"
+                android:layout_margin="@dimen/text_margin_small" />
+
+            <TextView
+                android:id="@+id/apply_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/object_name"
+                android:layout_margin="@dimen/text_margin_small"
+                android:layout_toRightOf="@id/sample_id" />
+            <TextView
+                android:id="@+id/org_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/apply_time"
+                android:layout_marginBottom="@dimen/text_margin_micro"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="45dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/normal_margin"
+            android:layout_marginRight="3dp"
+            >
+            <Button
+                android:id="@+id/button_sample_witness"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/witness" />
+
+            <Button
+                android:id="@+id/button_test_witness"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/witness" />
+
+            <Button
+                android:id="@+id/button_upload"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="50dp"
+                android:background="@android:drawable/ic_menu_upload" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.phobes.witnessassitant"
+    android:installLocation = "auto"
+    android:revisionCode="10"
+    android:versionName="1.0.0.10">
+
+    <!-- android:sharedUserId="android.uid.system"-->
+    <!-- <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.phobes.witnessassitant"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>-->
+    <!--phonegap-->
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true"
+        android:resizeable="true"
+        android:anyDensity="true"
+        />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.RECORD_VIDEO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <!--phonegap-->
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="25"/><!---->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="25"/><!---->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <service android:name=".service.UploadService"></service>
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5700bb7467e58ef3fd000648" />
+        <meta-data
+            android:name="jiaozebo@foxmail.com"
+            android:value="channel" />
+
+        <activity
+            android:name=".activity.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.TestObjectListActivity" />
+        <activity android:name=".activity.SampleGuildItemDetailActivity" />
+        <activity android:name=".activity.WitenessActivity" />
+        <activity android:name=".activity.WitnessMainActivity" />
+        <activity android:name=".activity.WitenessApplyActivity" />
+        <activity android:name=".activity.WitenessListActivity" />
+        <activity android:name=".activity.SettingActivity" />
+        <activity android:name=".activity.SampleProductActivity" />
+        <activity android:name=".activity.InRoomActivity" />
+        <activity android:name=".activity.OutRoomActivity" />
+        <activity android:name=".activity.SampleModelActivity" />
+        <activity android:name=".activity.OrderTicketActivity" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.RegisterApplyActivity" />
+        <activity android:name=".activity.CaptureActivity" />
+        <activity android:name=".activity.EntryCheckActivity" />
+        <activity android:name=".activity.EntryCheckMainActivity" />
+        <activity android:name=".activity.EntryCheckTaskDetailActivity" />
+        <activity android:name=".activity.SiteTestMainActivity" />
+        <activity android:name=".activity.MeasurePointActivity"/>
+        <activity android:name=".activity.PointItemActivity"/>
+        <activity android:name=".activity.SetMessageAcitivity"/>
+        <activity android:name=".activity.MixTaskActivity"/>
+        <activity android:name=".activity.MixTaskDetailActivity"/>
+        <activity android:name=".activity.HearTaskActivity"/>
+        <activity android:name=".activity.NewTaskActivity"/>
+        <activity android:name=".activity.TestConfirmActivity"/>
+        <activity android:name=".activity.TestDetectionActivity"/>
+        <activity android:name=".activity.WatchProgressActivity"/>
+        <activity android:name=".activity.DepartTruckActivity"/>
+        <activity android:name=".activity.ProblemBaseActivity"/>
+        <activity android:name=".activity.ProblemBaseDetailActivity"/>
+        <activity android:name=".activity.TestVideoActivity"/>
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+
+        <!--<activity
+            android:name="org.easydarwin.easyplayer.PlayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity
+            android:name="org.easydarwin.easyplayer.SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name="org.easydarwin.easyplayer.PlaylistActivity"
+            android:label="@string/app_name"/>-->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>
